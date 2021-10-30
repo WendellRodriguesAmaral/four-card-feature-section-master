@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    padding: 0 1rem;
+    background-color:hsl(0, 0%, 98%)
+}
+:root{
+    --general-font:'Poppins', sans-serif;
+    --color-texts: hsl(229, 6%, 66%);
+    --color-titles:hsl(234, 12%, 34%);
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    /* border: solid 1px rgb(231, 211, 211);*/
+}
+
+section.header{
+    width: 100%;
+    /* background-color: rgb(218, 218, 218);*/
+    /* border:solid 1px black; */
+    padding:4rem 0;
+    text-align: center;
+    
+}
+
+.header{
+    font-family: var(--general-font);
+    color:var(--color-titles);
+    font-size:1.2rem;
+}
+.header h1 span{
+    font-weight: 200;
+}
+
+.header p{
+    color:var(--color-texts);
+    margin-top: 1rem;
+    font-size:1.1rem;
+}
+
+/*   INIT CARDS  */
+
+section.cards{
+    /* border: solid 1px black; */
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    padding:2rem;
+    /* border: solid 1px black; */
+    font-family:var(--general-font);
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 1px rgb(214, 214, 214);
+}
+
+.cardSupervisor .card{
+    border-top: solid 3px hsl(180, 62%, 55%);
+}
+
+.cardsTeamBuilderAndKarma .card{
+    border-top: solid 3px hsl(0, 78%, 62%);
+}
+.cardsTeamBuilderAndKarma .card:nth-child(2){
+    border-top: solid 3px hsl(34, 97%, 64%);
+}
+
+.cardCalculator .card{
+    border-top: solid 3px hsl(212, 86%, 64%);
+}
+
+.card h3{
+    color:var(--color-titles);
+}
+.card p{
+    color:var(--color-texts);
+    margin-bottom: 2rem;
+}
+
+.card .image{
+    width: 100%;
+    /* background-color: red; */
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+@media (min-width:800px){
+
+    section.header{
+      
+    }
+
+}
