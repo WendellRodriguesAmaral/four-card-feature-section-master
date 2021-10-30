@@ -103,10 +103,12 @@ section.cards{
 
 
 @media (min-width:800px){
+   
 
     section.header{
       width: 40%;
       margin: auto;
+      padding: 2rem 0;
     }
 
     .header p{
@@ -117,9 +119,34 @@ section.cards{
         width: 80%;
         margin:auto;
         flex-direction: row;
+        /* border: solid 1px black;   */
+        padding:0 2rem; 
+        gap: 2rem;     
     }
 
+    section.cards .cardSupervisor{
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+    }
+    section.cards .cardsTeamBuilderAndKarma{
+        width: 33.33%;
+    }
+    section.cards .cardCalculator{
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .card{
+        padding:1rem 2rem;
+    }
+    .card h3{       
+        font-size:1rem;
+    }
 
-
+    .card p{
+        font-size: .7rem;
+    }
 
 }
